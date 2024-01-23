@@ -31,5 +31,5 @@ function limpiarFormulario() {
   document.getElementById("categoria").value = "mensajeria";
 }
 function refrescarDatos() {
-  location.reload(); // Recargar la página para simular la actualización de datos
+  location.reload();
 }
