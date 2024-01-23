@@ -30,3 +30,6 @@ function limpiarFormulario() {
   document.getElementById("objeto").value = "";
   document.getElementById("categoria").value = "mensajeria";
 }
+function refrescarDatos() {
+  location.reload(); // Recargar la página para simular la actualización de datos
+}
