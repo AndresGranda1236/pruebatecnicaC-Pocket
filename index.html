@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <h2>Prueba Tecnica C-Pocket</h2>
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" placeholder="Nombre de la App" />
+
+      <label for="objeto">Objeto:</label>
+      <input type="text" id="objeto" placeholder="Objeto" />
+
+      <label for="categoria">Categoría:</label>
+      <select id="categoria">
+        <option value="mensajeria">Mensajería</option>
+        <option value="redes-sociales">Redes Sociales</option>
+        <option value="entretenimiento">Entretenimiento</option>
+      </select>
+
+      <button onclick="agregarDato()">Agregar Dato</button>
+
+      <h3 id="lista-de-datos">Datos</h3>
+      <ul id="lista-datos"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
