@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
@@ -7,10 +7,7 @@ body {
   align-items: center;
   height: 100vh;
   color: #fff;
-  background: url(fondo.png), #7b4397;
-  background: url(fondo.png),
-    -webkit-gradient(linear, right top, left top, from(#7b4397), to(#dc2430));
-  background: url(fondo.png), linear-gradient(to left, #7b4397, #dc2430);
+  background: url("fondo.png"), linear-gradient(to left, #7b4397, #dc2430);
 }
 
 .app-container {
@@ -20,15 +17,14 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   color: #fff;
-  background: url(fondo.png), #7b4397;
-  background: url(fondo.png),
-    -webkit-gradient(linear, right top, left top, from(#7b4397), to(#dc2430));
-  background: url(fondo.png), linear-gradient(to left, #7b4397, #dc2430);
+  background: url("fondo.png"), linear-gradient(to left, #1d012b, #af0813);
 }
+
 #lista-de-datos {
   background-color: #b4d2d9;
   border-radius: 15px;
 }
+
 input {
   padding: 8px;
   margin: 5px;
