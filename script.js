@@ -14,10 +14,13 @@ function agregarDato() {
 
 function agregarElementoLista(dato) {
   const listaDatos = document.getElementById("lista-datos");
-  const li = document.createElement("li");
-  li.innerHTML = `<span>${dato.nombre} - ${dato.objeto} - ${dato.categoria}</span>
-                   <button class="delete-btn" onclick="eliminarDato(this)">Eliminar</button>`;
-  listaDatos.appendChild(li);
+  const tr = document.createElement("tr");
+  tr.innerHTML = `
+                   <td>${dato.nombre}</td>
+                   <td>${dato.objeto}</td>
+                   <td>${dato.categoria}</td>
+                   <td><button class="delete-btn" onclick="eliminarDato(this.parentElement)">Eliminar</button></td>`;
+  listaDatos.appendChild(tr);
 }
 
 function eliminarDato(elemento) {
